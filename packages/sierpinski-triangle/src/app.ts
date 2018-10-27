@@ -1,8 +1,6 @@
 import { LitElement, property, html, customElement, styleString } from '@polymer/lazy-lit-element';
 import './triangle.js';
 
-console.log('app.ts');
-
 const containerStyle = {
   position: 'absolute',
   transformOrigin: '0 0',

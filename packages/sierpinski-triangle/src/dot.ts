@@ -1,7 +1,5 @@
 import { LazyLitElement, property, html, customElement, styleString } from '@polymer/lazy-lit-element';
 
-console.log('dot.ts');
-
 @customElement('s-dot' as any)
 export class Dot extends LazyLitElement {
   @property()
@@ -20,10 +18,12 @@ export class Dot extends LazyLitElement {
 
   enter() {
     this.hover = true;
+    this.requestUrgenUpdate();
   }
 
   leave() {
     this.hover = false;
+    this.requestUrgenUpdate();
   }
 
   render() {

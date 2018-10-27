@@ -1,8 +1,6 @@
 import { LazyLitElement, property, html, customElement } from '@polymer/lazy-lit-element';
 import './dot.js';
 
-console.log('triangle.ts');
-
 const targetSize = 25;
 
 @customElement('s-triangle' as any)

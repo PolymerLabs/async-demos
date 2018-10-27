@@ -10,14 +10,26 @@ export {styleString} from '@polymer/lit-element/lib/render-helpers';
 const scheduler = new Scheduler();
 scheduler.addLocalQueue('animation', new AnimationFrameQueueScheduler(8));
 
+const resolveUrgentUpdate = Symbol();
+
 export abstract class LazyLitElement extends LitElement {
-  _scheduleUpdate() {
-    // console.log('_scheduleUpdate');
-    // console.log('LazyLitElement._scheduleUpdate');
-    // return new Promise((r) => setTimeout(r));
-    return scheduler.scheduleTask('animation', () => {
-      // console.log('task run');
-      (this as any)._validate();
-    });
+  [resolveUrgentUpdate]?: () => void;
+
+  requestUrgenUpdate() {
+    this.requestUpdate();
+    if (this[resolveUrgentUpdate] !== undefined) {
+      this[resolveUrgentUpdate]!();
+    }
+  }
+
+  async _scheduleUpdate() {
+    await Promise.race([
+      new Promise((res) => {
+        this[resolveUrgentUpdate] = res;
+      }),
+      scheduler.scheduleTask('animation', () => {})
+    ]);
+    this[resolveUrgentUpdate] = undefined;
+    (this as any)._validate();
   }
 }
