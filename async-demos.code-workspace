@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "packages/scheduler"
+		},
+		{
+			"path": "packages/split-element"
+		},
+		{
+			"path": "packages/lazy-lit-element"
+		},
+		{
+			"path": "packages/sierpinski-triangle"
+		}
+	],
+	"settings": {}
+}

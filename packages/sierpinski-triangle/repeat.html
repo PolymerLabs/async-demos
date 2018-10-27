@@ -1,0 +1,96 @@
+<!--
+@license
+Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lit Repeat</title>
+  </head>
+  <body>
+    <h1>Lit Repeat</h1>
+    <x-repeater constantupdate></x-repeater>
+    <script type="module">
+      import {DeferredLitElement as LitElement, html} from './deferred-lit-element.js';
+
+      class Leaf extends LitElement {
+        static get properties() {
+          return {
+            value: { type: Number }
+          };
+        }
+        constructor() {
+          super();
+          this.defer = true;
+          this.value = 0;
+        }
+        render() {
+          const end = performance.now() + 1;
+          while (performance.now() < end) { }
+          return html`
+            <style>
+              :host {
+                display: inline-block;
+                padding: 5px;
+                margin: 5px;
+                border: 1px solid blue;
+                background: lightblue;
+                border-radius: 4px;
+              }
+            </style>
+            ${this.value.toFixed(2)}
+          `;
+        }
+      }
+      customElements.define('x-leaf', Leaf);
+
+      class Repeater extends LitElement {
+        static get properties() {
+          return {
+            data: { type: Array },
+            constantUpdate: { type: Boolean }
+          };
+        }
+        constructor() {
+          super();
+        }
+        connectedCallback() {
+          super.connectedCallback();
+          this.resetData();
+        }
+        resetData() {
+          const data = this.data = this.data ? this.data.slice() : [];
+          for (let i=0; i<200; i++) {
+            const row = this.data[i] = this.data[i] ? this.data[i].slice() : [];
+            for (let j=0; j<20; j++) {
+              row[j] = Math.random();
+            }
+          }
+          if (this.constantUpdate) {
+            requestAnimationFrame(() => this.resetData());
+          }
+        }
+        render() {
+          return html`
+            <style>
+            :host {
+              display: block;
+            }
+            </style>
+            ${this.data.map(row => html`
+              <div>${row.map(item => html`<x-leaf .value=${item}></x-leaf>`)}</div>
+            `)}
+          `;
+        }
+      }
+      customElements.define('x-repeater', Repeater);
+    </script>
+  </body>
+</html>

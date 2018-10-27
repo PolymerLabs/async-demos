@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "es2017"],
+    "moduleResolution": "node",
+
+    "composite": true,
+    "pretty": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    "experimentalDecorators": true,
+  },
+  "references": [
+    { "path": "./packages/scheduler" },
+    { "path": "./packages/lazy-lit-element" },
+    { "path": "./packages/split-element" }
+  ]
+}

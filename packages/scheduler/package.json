@@ -1,0 +1,15 @@
+{
+  "name": "@polymer/scheduler",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "wct --npm -l chrome -p",
+    "format": "find src -name \"*.ts\" | xargs clang-format --style=file -i"
+  },
+  "description": "An experimental scheduling API for JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/PolymerLabs/scheduler",
+  "author": "justin@fagnani.com",
+  "license": "Apache 2.0"
+}

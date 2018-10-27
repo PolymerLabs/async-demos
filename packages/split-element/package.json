@@ -1,0 +1,21 @@
+{
+  "name": "@polymer/split-element",
+  "private": true,
+  "version": "0.1.0-pre.1",
+  "description": "Lazy-loaded LitElements",
+  "main": "split-element.js",
+  "module": "split-element.js",
+  "repository": "https://github.com/PolymerLabs/async-demos.git",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "polymer test -l chrome"
+  },
+  "keywords": [],
+  "author": "The Polymer Authors",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.2"
+  },
+  "typings": "split-element.d.ts"
+}
