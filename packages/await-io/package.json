@@ -1,7 +1,7 @@
 {
-  "name": "sierpinski-triangle",
+  "name": "await-io",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "polymer serve --npm",
@@ -13,5 +13,10 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "@polymer/lazy-lit-element": "^1.0.0"
+  },
+  "main": "lib/await-io.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolymerLabs/async-demos.git"
   }
 }

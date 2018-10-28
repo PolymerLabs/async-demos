@@ -5,6 +5,8 @@ import {
 } from '@polymer/scheduler';
 export * from '@polymer/lit-element';
 export {customElement} from '@polymer/lit-element/lib/decorators.js';
+// export {until} from 'lit-html/directives/until.js';
+export {until} from '../node_modules/@polymer/lit-element/node_modules/lit-html/directives/until.js';
 export {styleString} from '@polymer/lit-element/lib/render-helpers';
 
 const scheduler = new Scheduler();
