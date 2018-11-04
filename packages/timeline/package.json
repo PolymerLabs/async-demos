@@ -1,5 +1,5 @@
 {
-  "name": "await-io",
+  "name": "timeline-demo",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -16,7 +16,7 @@
     "cancel-token": "^0.1.1",
     "lit-html": "^0.12.0"
   },
-  "main": "lib/await-io.js",
+  "main": "lib/timeline-demo.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PolymerLabs/async-demos.git"

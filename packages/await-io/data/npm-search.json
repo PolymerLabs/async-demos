@@ -1,0 +1,1035 @@
+{
+  "objects": [
+    {
+      "package": {
+        "name": "lit-html",
+        "scope": "unscoped",
+        "version": "0.12.0",
+        "description": "HTML template literals in JavaScript",
+        "date": "2018-10-05T18:56:17.343Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/lit-html",
+          "homepage": "https://github.com/Polymer/lit-html#readme",
+          "repository": "https://github.com/Polymer/lit-html",
+          "bugs": "https://github.com/Polymer/lit-html/issues"
+        },
+        "author": {
+          "name": "The Polymer Authors"
+        },
+        "publisher": {
+          "username": "justinfagnani",
+          "email": "justin@fagnani.com"
+        },
+        "maintainers": [
+          {
+            "username": "aomarks",
+            "email": "aomarks@google.com"
+          },
+          {
+            "username": "azakus",
+            "email": "dfreedm2@gmail.com"
+          },
+          {
+            "username": "bicknellr",
+            "email": "bicknellr@gmail.com"
+          },
+          {
+            "username": "emarquez",
+            "email": "emarquez@google.com"
+          },
+          {
+            "username": "justinfagnani",
+            "email": "justin@fagnani.com"
+          },
+          {
+            "username": "keanulee",
+            "email": "npm@keanulee.com"
+          },
+          {
+            "username": "notwaldorf",
+            "email": "notwaldorf@gmail.com"
+          },
+          {
+            "username": "polymer-devs",
+            "email": "admin@polymer-project.org"
+          },
+          {
+            "username": "samli",
+            "email": "sam@sam.li"
+          },
+          {
+            "username": "sorvell",
+            "email": "sorvell@google.com"
+          },
+          {
+            "username": "tvanderlippe",
+            "email": "tvanderlippe@google.com"
+          },
+          {
+            "username": "usergenic",
+            "email": "brendan@usergenic.com"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.7463873537229456,
+        "detail": {
+          "quality": 0.8934504076045459,
+          "popularity": 0.3676405306767543,
+          "maintenance": 0.9990801305849084
+        }
+      },
+      "searchScore": 100000.69
+    },
+    {
+      "package": {
+        "name": "@polymer/lit-element",
+        "scope": "polymer",
+        "version": "0.6.2",
+        "description": "Polymer based lit-html custom element",
+        "date": "2018-10-05T22:41:03.640Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40polymer%2Flit-element",
+          "homepage": "https://github.com/Polymer/lit-element#readme",
+          "repository": "https://github.com/Polymer/lit-element",
+          "bugs": "https://github.com/Polymer/lit-element/issues"
+        },
+        "author": {
+          "name": "The Polymer Authors"
+        },
+        "publisher": {
+          "username": "justinfagnani",
+          "email": "justin@fagnani.com"
+        },
+        "maintainers": [
+          {
+            "username": "aomarks",
+            "email": "aomarks@google.com"
+          },
+          {
+            "username": "azakus",
+            "email": "dfreedm2@gmail.com"
+          },
+          {
+            "username": "bicknellr",
+            "email": "bicknellr@gmail.com"
+          },
+          {
+            "username": "emarquez",
+            "email": "emarquez@google.com"
+          },
+          {
+            "username": "justinfagnani",
+            "email": "justin@fagnani.com"
+          },
+          {
+            "username": "keanulee",
+            "email": "npm@keanulee.com"
+          },
+          {
+            "username": "notwaldorf",
+            "email": "notwaldorf@gmail.com"
+          },
+          {
+            "username": "polymer-devs",
+            "email": "admin@polymer-project.org"
+          },
+          {
+            "username": "samli",
+            "email": "sam@sam.li"
+          },
+          {
+            "username": "sorvell",
+            "email": "sorvell@google.com"
+          },
+          {
+            "username": "tvanderlippe",
+            "email": "tvanderlippe@google.com"
+          },
+          {
+            "username": "usergenic",
+            "email": "brendan@usergenic.com"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.7200537240928335,
+        "detail": {
+          "quality": 0.8614736372846019,
+          "popularity": 0.31902222599628355,
+          "maintenance": 0.9998681537392966
+        }
+      },
+      "searchScore": 0.007263521
+    },
+    {
+      "package": {
+        "name": "hyperhtml",
+        "scope": "unscoped",
+        "version": "2.16.0",
+        "description": "A Fast & Light Virtual DOM Alternative",
+        "keywords": [
+          "dom",
+          "diff",
+          "performance",
+          "template",
+          "literals",
+          "lightweight",
+          "fast",
+          "react",
+          "virtual",
+          "lit-html",
+          "alternative"
+        ],
+        "date": "2018-10-31T10:32:57.781Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/hyperhtml",
+          "homepage": "https://viperhtml.js.org/hyper.html",
+          "repository": "https://github.com/WebReflection/hyperhtml",
+          "bugs": "https://github.com/WebReflection/hyperhtml/issues"
+        },
+        "author": {
+          "name": "Andrea Giammarchi"
+        },
+        "publisher": {
+          "username": "webreflection",
+          "email": "andrea.giammarchi@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "webreflection",
+            "email": "andrea.giammarchi@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.7265638752960015,
+        "detail": {
+          "quality": 0.9508895748613199,
+          "popularity": 0.2608485795413929,
+          "maintenance": 0.999999999994623
+        }
+      },
+      "searchScore": 0.0034657228
+    },
+    {
+      "package": {
+        "name": "@durandj/lit-html",
+        "scope": "durandj",
+        "version": "1.0.0-pre",
+        "description": "HTML template literals in JavaScript",
+        "date": "2018-07-20T13:13:40.037Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40durandj%2Flit-html",
+          "homepage": "https://github.com/Polymer/lit-html#readme",
+          "repository": "https://github.com/Polymer/lit-html",
+          "bugs": "https://github.com/Polymer/lit-html/issues"
+        },
+        "author": {
+          "name": "The Polymer Authors"
+        },
+        "publisher": {
+          "username": "durandj",
+          "email": "james.durand@alumni.msoe.edu"
+        },
+        "maintainers": [
+          {
+            "username": "durandj",
+            "email": "james.durand@alumni.msoe.edu"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.6667373396612799,
+        "detail": {
+          "quality": 0.8573885634172261,
+          "popularity": 0.17386274356975817,
+          "maintenance": 0.9961966011048478
+        }
+      },
+      "searchScore": 0.0028973292
+    },
+    {
+      "package": {
+        "name": "@gluon/gluon",
+        "scope": "gluon",
+        "version": "2.5.1",
+        "description": "A tiny WebComponent library",
+        "keywords": [
+          "web-components",
+          "webcomponents",
+          "lit-html",
+          "lit"
+        ],
+        "date": "2018-10-08T00:25:08.244Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40gluon%2Fgluon",
+          "homepage": "https://github.com/ruphin/gluonjs",
+          "repository": "https://github.com/ruphin/gluonjs",
+          "bugs": "https://github.com/ruphin/gluonjs/issues"
+        },
+        "author": {
+          "name": "Goffert van Gool",
+          "email": "ruphin@ruphin.net",
+          "username": "ruphin"
+        },
+        "publisher": {
+          "username": "ruphin",
+          "email": "ruphin@ruphin.net"
+        },
+        "maintainers": [
+          {
+            "username": "ruphin",
+            "email": "ruphin@ruphin.net"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6675026071777517,
+        "detail": {
+          "quality": 0.9477883560814134,
+          "popularity": 0.09487669967339711,
+          "maintenance": 0.9998835870503964
+        }
+      },
+      "searchScore": 0.0007858135
+    },
+    {
+      "package": {
+        "name": "lit-ntml",
+        "scope": "unscoped",
+        "version": "1.3.1",
+        "description": "Inspired by lit-html but for Node.js",
+        "keywords": [
+          "html",
+          "lit-ntml",
+          "minify",
+          "npm",
+          "ntml",
+          "parse-html",
+          "prettify",
+          "tagged-template-literals",
+          "template",
+          "templating"
+        ],
+        "date": "2018-08-19T16:27:22.037Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/lit-ntml",
+          "homepage": "https://github.com/motss/lit-ntml",
+          "repository": "https://github.com/motss/lit-ntml",
+          "bugs": "https://github.com/motss/lit-ntml/issues"
+        },
+        "author": {
+          "name": "Rong Sen Ng",
+          "email": "wes.ngrongsen@gmail.com",
+          "url": "https://github.com/motss",
+          "username": "motss"
+        },
+        "publisher": {
+          "username": "motss",
+          "email": "wes.ngrongsen@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "motss",
+            "email": "wes.ngrongsen@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6468003536479516,
+        "detail": {
+          "quality": 0.8900315059472947,
+          "popularity": 0.08513142993748586,
+          "maintenance": 0.9999854325304092
+        }
+      },
+      "searchScore": 0.0007360029
+    },
+    {
+      "package": {
+        "name": "minify-html-literals",
+        "scope": "unscoped",
+        "version": "1.1.1",
+        "description": "Minify HTML template literal strings",
+        "keywords": [
+          "minify",
+          "html",
+          "literal",
+          "literals",
+          "template",
+          "tagged",
+          "lit-html"
+        ],
+        "date": "2018-10-25T14:08:44.094Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/minify-html-literals",
+          "homepage": "https://github.com/asyncLiz/minify-html-literals#readme",
+          "repository": "https://github.com/asyncLiz/minify-html-literals",
+          "bugs": "https://github.com/asyncLiz/minify-html-literals/issues"
+        },
+        "author": {
+          "name": "Liz Mitchell",
+          "email": "asyncliz@gmail.com",
+          "username": "asyncliz"
+        },
+        "publisher": {
+          "username": "asyncliz",
+          "email": "asyncliz@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "asyncliz",
+            "email": "asyncliz@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6553479781648346,
+        "detail": {
+          "quality": 0.9582752683325614,
+          "popularity": 0.05114995290619946,
+          "maintenance": 0.9998940404225609
+        }
+      },
+      "searchScore": 0.00071069406
+    },
+    {
+      "package": {
+        "name": "@nutmeg/seed",
+        "scope": "nutmeg",
+        "version": "0.16.1",
+        "description": "Nutmeg Web Component Seed",
+        "keywords": [
+          "web-components",
+          "webcomponents",
+          "shadow-dom",
+          "shadowdom",
+          "lit-html",
+          "nutmeg",
+          "typescript"
+        ],
+        "date": "2018-10-12T21:28:25.005Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40nutmeg%2Fseed",
+          "homepage": "https://nutmeg.tools",
+          "repository": "https://github.com/abraham/nutmeg",
+          "bugs": "https://github.com/abraham/nutmeg/issues"
+        },
+        "author": {
+          "name": "Abraham Williams",
+          "email": "abraham@abrah.am",
+          "url": "https://abrah.am"
+        },
+        "publisher": {
+          "username": "abraham",
+          "email": "4braham@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "abraham",
+            "email": "4braham+abrahamwilliams@gmail.com"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.6512699867851769,
+        "detail": {
+          "quality": 0.8425613813794129,
+          "popularity": 0.1385759210610088,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 0.0005346494
+    },
+    {
+      "package": {
+        "name": "rollup-plugin-minify-html-literals",
+        "scope": "unscoped",
+        "version": "1.1.1",
+        "description": "Rollup plugin to minify HTML template literal strings",
+        "keywords": [
+          "rollup-plugin",
+          "minify",
+          "html",
+          "literal",
+          "literals",
+          "template",
+          "tagged",
+          "lit-html"
+        ],
+        "date": "2018-10-25T14:09:51.141Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/rollup-plugin-minify-html-literals",
+          "homepage": "https://github.com/asyncLiz/rollup-plugin-minify-html-literals#readme",
+          "repository": "https://github.com/asyncLiz/rollup-plugin-minify-html-literals",
+          "bugs": "https://github.com/asyncLiz/rollup-plugin-minify-html-literals/issues"
+        },
+        "author": {
+          "name": "Liz Mitchell",
+          "email": "asyncliz@gmail.com",
+          "username": "asyncliz"
+        },
+        "publisher": {
+          "username": "asyncliz",
+          "email": "asyncliz@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "asyncliz",
+            "email": "asyncliz@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6490732188245889,
+        "detail": {
+          "quality": 0.9606164589812777,
+          "popularity": 0.03116523585336433,
+          "maintenance": 0.999944138804366
+        }
+      },
+      "searchScore": 0.0005093787
+    },
+    {
+      "package": {
+        "name": "lit-redux-router",
+        "scope": "unscoped",
+        "version": "0.2.2",
+        "description": "Declarative way of routing for lit-html powered by pwa-helpers, redux and lit-element",
+        "keywords": [
+          "router",
+          "lit-html",
+          "lit-element",
+          "redux"
+        ],
+        "date": "2018-11-03T12:54:31.148Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/lit-redux-router",
+          "homepage": "https://github.com/fernandopasik/lit-redux-router",
+          "repository": "https://github.com/fernandopasik/lit-redux-router",
+          "bugs": "https://github.com/fernandopasik/lit-redux-router/issues"
+        },
+        "author": {
+          "name": "Fernando Pasik",
+          "email": "fernando@pasik.com.ar",
+          "url": "https://fernandopasik.com",
+          "username": "fernandopasik"
+        },
+        "publisher": {
+          "username": "fernandopasik",
+          "email": "fernando@pasik.com.ar"
+        },
+        "maintainers": [
+          {
+            "username": "fernandopasik",
+            "email": "fernando@pasik.com.ar"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.6305719975576911,
+        "detail": {
+          "quality": 0.8853613561233923,
+          "popularity": 0.046946623758093636,
+          "maintenance": 0.9958064925866876
+        }
+      },
+      "searchScore": 0.00044391942
+    },
+    {
+      "package": {
+        "name": "lit-html-brackets",
+        "scope": "unscoped",
+        "version": "0.3.0",
+        "description": "HTML Template literals with a bracket syntax similar to Angular",
+        "date": "2018-05-10T19:52:36.397Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/lit-html-brackets",
+          "homepage": "https://github.com/bgotink/lit-html-brackets",
+          "repository": "https://github.com/bgotink/lit-html-brackets",
+          "bugs": "https://github.com/bgotink/lit-html-brackets/issues"
+        },
+        "author": {
+          "name": "Bram Gotink",
+          "email": "bram@gotink.me",
+          "username": "bgotink"
+        },
+        "publisher": {
+          "username": "bgotink",
+          "email": "bram@gotink.me"
+        },
+        "maintainers": [
+          {
+            "username": "bgotink",
+            "email": "bram@gotink.me"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.6113702924024018,
+        "detail": {
+          "quality": 0.8343335742963074,
+          "popularity": 0.03873139515729045,
+          "maintenance": 0.9928978051670228
+        }
+      },
+      "searchScore": 0.0004419741
+    },
+    {
+      "package": {
+        "name": "@appnest/lit-translate",
+        "scope": "appnest",
+        "version": "1.0.3",
+        "description": "A lightweight blazing-fast internationalization (i18n) library for your next web-based project",
+        "keywords": [
+          "lit-html",
+          "lit-element",
+          "custom",
+          "elements",
+          "web",
+          "component",
+          "custom element",
+          "web component",
+          "util",
+          "decorators",
+          "directives",
+          "translate"
+        ],
+        "date": "2018-11-03T17:57:05.426Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40appnest%2Flit-translate",
+          "homepage": "https://github.com/andreasbm/lit-translate#readme",
+          "repository": "https://github.com/andreasbm/lit-translate",
+          "bugs": "https://github.com/andreasbm/lit-translate/issues"
+        },
+        "author": {
+          "name": "Appnest"
+        },
+        "publisher": {
+          "username": "explore",
+          "email": "andmehlsen@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "explore",
+            "email": "andmehlsen@gmail.com"
+          },
+          {
+            "username": "runebm",
+            "email": "runemehlsen@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6333285405042657,
+        "detail": {
+          "quality": 0.9036340843102597,
+          "popularity": 0.035068460369120535,
+          "maintenance": 0.9998981545199872
+        }
+      },
+      "searchScore": 0.00039553805
+    },
+    {
+      "package": {
+        "name": "parse-literals",
+        "scope": "unscoped",
+        "version": "1.1.0",
+        "description": "Parse template literals from code",
+        "keywords": [
+          "parse",
+          "extract",
+          "literal",
+          "literals",
+          "template",
+          "tagged",
+          "lit-html"
+        ],
+        "date": "2018-10-24T19:23:01.663Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/parse-literals",
+          "homepage": "https://github.com/asyncLiz/parse-literals#readme",
+          "repository": "https://github.com/asyncLiz/parse-literals",
+          "bugs": "https://github.com/asyncLiz/parse-literals/issues"
+        },
+        "author": {
+          "name": "Liz Mitchell",
+          "email": "asyncliz@gmail.com",
+          "username": "asyncliz"
+        },
+        "publisher": {
+          "username": "asyncliz",
+          "email": "asyncliz@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "asyncliz",
+            "email": "asyncliz@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6513454731850776,
+        "detail": {
+          "quality": 0.9540135457224789,
+          "popularity": 0.04337758285912917,
+          "maintenance": 0.9998835870503964
+        }
+      },
+      "searchScore": 0.00036474844
+    },
+    {
+      "package": {
+        "name": "@moleculejs/molecule-lit",
+        "scope": "moleculejs",
+        "version": "0.12.6",
+        "description": "Molecule elements with lit-html",
+        "keywords": [
+          "web components",
+          "molecule",
+          "custom elements",
+          "lit-html"
+        ],
+        "date": "2018-08-10T08:17:10.579Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40moleculejs%2Fmolecule-lit",
+          "homepage": "https://moleculejs.org",
+          "repository": "https://github.com/Molecule-JS/MoleculeJS",
+          "bugs": "https://github.com/Molecule-JS/MoleculeJS/issues"
+        },
+        "author": {
+          "name": "DiiLord",
+          "email": "d.drodt@gmx.de",
+          "username": "diilord"
+        },
+        "publisher": {
+          "username": "diilord",
+          "email": "d.drodt@gmx.de"
+        },
+        "maintainers": [
+          {
+            "username": "diilord",
+            "email": "d.drodt@gmx.de"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.6167035893918098,
+        "detail": {
+          "quality": 0.8254605608172167,
+          "popularity": 0.0552226802910445,
+          "maintenance": 0.9992499515565121
+        }
+      },
+      "searchScore": 0.0003249745
+    },
+    {
+      "package": {
+        "name": "@moleculejs/molecule-lit-extended",
+        "scope": "moleculejs",
+        "version": "0.12.6",
+        "description": "Molecule elements using lit-html extended",
+        "keywords": [
+          "web components",
+          "molecule",
+          "custom elements",
+          "lit-html"
+        ],
+        "date": "2018-08-10T08:17:04.893Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40moleculejs%2Fmolecule-lit-extended",
+          "homepage": "https://moleculejs.org",
+          "repository": "https://github.com/Molecule-JS/MoleculeJS",
+          "bugs": "https://github.com/Molecule-JS/MoleculeJS/issues"
+        },
+        "author": {
+          "name": "DiiLord",
+          "email": "d.drodt@gmx.de",
+          "username": "diilord"
+        },
+        "publisher": {
+          "username": "diilord",
+          "email": "d.drodt@gmx.de"
+        },
+        "maintainers": [
+          {
+            "username": "diilord",
+            "email": "d.drodt@gmx.de"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.6164101157053312,
+        "detail": {
+          "quality": 0.8260459981662844,
+          "popularity": 0.053882380601904645,
+          "maintenance": 0.9992499515565121
+        }
+      },
+      "searchScore": 0.00032072407
+    },
+    {
+      "package": {
+        "name": "babel-plugin-transform-jsx-lit-html",
+        "scope": "unscoped",
+        "version": "0.1.0",
+        "description": "Transform JSX to lit-html template literal",
+        "keywords": [
+          "babel-plugin",
+          "jsx",
+          "lit-html"
+        ],
+        "date": "2018-09-29T12:07:16.571Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/babel-plugin-transform-jsx-lit-html",
+          "homepage": "https://github.com/phaux/babel-jsx-lit-html#readme",
+          "repository": "https://github.com/phaux/babel-jsx-lit-html",
+          "bugs": "https://github.com/phaux/babel-jsx-lit-html/issues"
+        },
+        "author": {
+          "name": "phaux",
+          "email": "phaux4@gmail.com",
+          "username": "phaux"
+        },
+        "publisher": {
+          "username": "phaux",
+          "email": "phaux4@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "phaux",
+            "email": "phaux4@gmail.com"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.6082561864991791,
+        "detail": {
+          "quality": 0.8448192445808228,
+          "popularity": 0.03383276324617411,
+          "maintenance": 0.9799112742536327
+        }
+      },
+      "searchScore": 0.00030143416
+    },
+    {
+      "package": {
+        "name": "prettier-plugin-html-template-literals",
+        "scope": "unscoped",
+        "version": "1.0.5",
+        "description": "Formats HTML within tagged template literals in Prettier which is useful for hyperHTML, lit-html, choo, hyperx, nanohtml, snabby, yo-yo, and others.",
+        "keywords": [
+          "choo",
+          "html",
+          "hyperhtml",
+          "hyperx",
+          "lit-html",
+          "nanohtml",
+          "prettier",
+          "prettier-plugin",
+          "snabby",
+          "tagged-template-literal",
+          "template-literal",
+          "yo-yo"
+        ],
+        "date": "2018-06-22T12:16:56.634Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/prettier-plugin-html-template-literals",
+          "homepage": "https://github.com/sgtpep/prettier-plugin-html-template-literals#readme",
+          "repository": "https://github.com/sgtpep/prettier-plugin-html-template-literals",
+          "bugs": "https://github.com/sgtpep/prettier-plugin-html-template-literals/issues"
+        },
+        "author": {
+          "name": "Danil Semelenov"
+        },
+        "publisher": {
+          "username": "sgtpep",
+          "email": "mail@danil.mobi"
+        },
+        "maintainers": [
+          {
+            "username": "sgtpep",
+            "email": "mail@danil.mobi"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6286006305615826,
+        "detail": {
+          "quality": 0.8593732552408113,
+          "popularity": 0.05939615425525484,
+          "maintenance": 1
+        }
+      },
+      "searchScore": 0.0002955499
+    },
+    {
+      "package": {
+        "name": "lite-html",
+        "scope": "unscoped",
+        "version": "0.2.4",
+        "description": "A re-implementation of lit-html",
+        "keywords": [
+          "web-components",
+          "webcomponents",
+          "html"
+        ],
+        "date": "2018-08-18T04:57:31.036Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/lite-html",
+          "homepage": "https://github.com/ruphin/lite-html",
+          "repository": "https://github.com/ruphin/lite-html",
+          "bugs": "https://github.com/ruphin/lite-html/issues"
+        },
+        "author": {
+          "name": "Goffert van Gool",
+          "email": "ruphin@ruphin.net",
+          "username": "ruphin"
+        },
+        "publisher": {
+          "username": "ruphin",
+          "email": "ruphin@ruphin.net"
+        },
+        "maintainers": [
+          {
+            "username": "ruphin",
+            "email": "ruphin@ruphin.net"
+          }
+        ]
+      },
+      "flags": {
+        "unstable": true
+      },
+      "score": {
+        "final": 0.5998984371747536,
+        "detail": {
+          "quality": 0.8558739663731018,
+          "popularity": 0.04242546630727377,
+          "maintenance": 0.9379638115865063
+        }
+      },
+      "searchScore": 0.00029116464
+    },
+    {
+      "package": {
+        "name": "@framejs/renderer-lit-html",
+        "scope": "framejs",
+        "version": "1.0.9",
+        "description": "A Framejs renderer for lit-html",
+        "keywords": [
+          "components",
+          "custom",
+          "dom",
+          "elements",
+          "web",
+          "typescript"
+        ],
+        "date": "2018-10-15T20:17:48.291Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/%40framejs%2Frenderer-lit-html",
+          "homepage": "https://github.com/framejs/framejs#readme",
+          "repository": "https://github.com/framejs/framejs",
+          "bugs": "https://github.com/framejs/framejs/issues"
+        },
+        "author": {
+          "name": "Emil Møller",
+          "email": "emilrmoeller@gmail.com",
+          "username": "emolr"
+        },
+        "publisher": {
+          "username": "emolr",
+          "email": "emilrmoeller@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "emolr",
+            "email": "emilrmoeller@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.5925817123181745,
+        "detail": {
+          "quality": 0.752037588164805,
+          "popularity": 0.048498302992019626,
+          "maintenance": 0.9999886566329317
+        }
+      },
+      "searchScore": 0.00028280134
+    },
+    {
+      "package": {
+        "name": "babel-plugin-template-html-minifier",
+        "scope": "unscoped",
+        "version": "2.0.1",
+        "description": "Minify HTML in tagged template strings using html-minifier",
+        "keywords": [
+          "babel",
+          "lit-html",
+          "choo",
+          "html-minifier"
+        ],
+        "date": "2018-09-20T16:48:42.916Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/babel-plugin-template-html-minifier",
+          "homepage": "https://github.com/goto-bus-stop/babel-plugin-template-html-minifier#readme",
+          "repository": "https://github.com/goto-bus-stop/babel-plugin-template-html-minifier",
+          "bugs": "https://github.com/goto-bus-stop/babel-plugin-template-html-minifier/issues"
+        },
+        "publisher": {
+          "username": "coreyfarrell",
+          "email": "git@cfware.com"
+        },
+        "maintainers": [
+          {
+            "username": "coreyfarrell",
+            "email": "git@cfware.com"
+          },
+          {
+            "username": "goto-bus-stop",
+            "email": "renee@kooi.me"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.6207243164823242,
+        "detail": {
+          "quality": 0.8413806352176474,
+          "popularity": 0.05235234157463721,
+          "maintenance": 0.9999623039025916
+        }
+      },
+      "searchScore": 0.00024461313
+    }
+  ],
+  "total": 119,
+  "time": "Sun Nov 04 2018 04:17:46 GMT+0000 (UTC)"
+}

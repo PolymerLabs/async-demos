@@ -7,6 +7,8 @@ export * from '@polymer/lit-element';
 export {customElement} from '@polymer/lit-element/lib/decorators.js';
 // export {until} from 'lit-html/directives/until.js';
 export {until} from '../node_modules/@polymer/lit-element/node_modules/lit-html/directives/until.js';
+export {repeat} from '../node_modules/@polymer/lit-element/node_modules/lit-html/directives/repeat.js';
+export * from '../node_modules/@polymer/lit-element/node_modules/lit-html/lit-html.js';
 export {styleString} from '@polymer/lit-element/lib/render-helpers';
 
 const scheduler = new Scheduler();
@@ -25,13 +27,29 @@ export abstract class LazyLitElement extends LitElement {
   }
 
   async _scheduleUpdate() {
-    await Promise.race([
-      new Promise((res) => {
-        this[resolveUrgentUpdate] = res;
-      }),
-      scheduler.scheduleTask('animation', () => {})
+  //   await new Promise((res) => {
+  //     setTimeout(res);
+  //     this[resolveUrgentUpdate] = res;
+  //   });
+  //   (this as any)._validate();
+  // }
+    let validated = false;
+    const validate = () => {
+      if (!validated) {
+        (this as any)._validate();
+        validated = true;
+      }
+    };
+    const urgentPromise = new Promise((res) => {
+      this[resolveUrgentUpdate] = res;
+    });
+    urgentPromise.then(() => {
+      validate();
+      this[resolveUrgentUpdate] = undefined;
+    });
+    return Promise.race([
+      urgentPromise,
+      scheduler.scheduleTask('animation', validate)
     ]);
-    this[resolveUrgentUpdate] = undefined;
-    (this as any)._validate();
   }
 }

@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "packages/await-io"
+		},
+		{
+			"path": "packages/timeline"
 		}
 	],
 	"settings": {}

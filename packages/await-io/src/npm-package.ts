@@ -1,7 +1,8 @@
-import { LitElement, property, html, customElement, until } from '@polymer/lazy-lit-element';
+import { LitElement, property, html, customElement } from '@polymer/lazy-lit-element';
+import { runAsync, InitialStateError } from './run-async.js';
 
-@customElement('async-io-demo' as any)
-export class AsyncIoDemo extends LitElement {
+@customElement('npm-package' as any)
+export class NpmPackage extends LitElement {
 
   @property()
   name?: string;
@@ -32,34 +33,36 @@ export class AsyncIoDemo extends LitElement {
         <a>${npmLogo}</a>
       </header>
       <div>
-        ${until(fetchPackage(this.name).then((pkg) => {
-          if (pkg === undefined) {
-            return html``;
-          }
-          return html`
-            <h2>${pkg.description}</h2>
+        ${fetchNpmPackage(this.name,
+          (pkg) => html`
+            <h3>${pkg.description}</h3>
+            <h4>dist-tags:</h4>
             <ul>
               ${Array.from(Object.entries(pkg['dist-tags'])).map(
-                ([tag, version]) => html`<li>${tag}: ${version}</li>`)}
+                ([tag, version]) => html`<li><pre>${tag}: ${version}</pre></li>`)}
             </ul>
-          `;
-        }), 'Loading...')}
+          `,
+          () => 'Loading...',
+          () => 'Enter a Package Name',
+          (e) => `Error ${e.message}`)}
       </div>
     `;
   }
 }
 
-const fetchPackage = async (name?: string): Promise<any> => {
-  if (name === undefined) {
-    return undefined;
+const fetchNpmPackage = runAsync(async (name?: string) => {
+  if (name === undefined || name === '') {
+    throw new InitialStateError();
   }
-  const response = await fetch(`https://cors-anywhere.herokuapp.com/registry.npmjs.org/${name}`);
+  const response = await fetch(getPackageUrl(name));
   if (response.status === 200) {
-    return await response.json();
+    return response.json();
   } else {
     throw response.text();
   }
-}
+});
+
+const getPackageUrl = (name: string) => `https://cors-anywhere.herokuapp.com/registry.npmjs.org/${name}`;
 
 const npmLogo = html`
   <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="540px" height="210px" viewBox="0 0 18 7">
