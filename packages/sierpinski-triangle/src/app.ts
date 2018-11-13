@@ -42,7 +42,6 @@ export class ExampleApplication extends LitElement {
   }
 
   render() {
-    // const elapsed = this.elapsed!;
     const t = (this.elapsed! / 1000) % 10;
     const scale = 1 + (t > 5 ? 10 - t : t) / 10;
     const transform = 'scaleX(' + (scale / 2.1) + ') scaleY(0.7) translateZ(0.1px)';

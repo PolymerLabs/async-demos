@@ -29,7 +29,6 @@ export class Dot extends LazyLitElement {
   render() {
     const s = this.size! * 1.3;
     const style = styleString({
-      // ...dotStyle,
       width: s + 'px',
       height: s + 'px',
       left: (this.x) + 'px',

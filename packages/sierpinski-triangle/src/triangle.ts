@@ -21,7 +21,6 @@ export class SierpinskiTriangle extends LazyLitElement {
 
   render() {
     let {s, x, y, label} = this;
-    // console.log('s-triangle.render()', {s, x, y, label});
     if (s <= targetSize) {
       return html`
         <s-dot
@@ -32,10 +31,10 @@ export class SierpinskiTriangle extends LazyLitElement {
         </s-dot>
       `;
     }
-    // var newSize = s / 2;
+
     const slowDown = true;
     if (slowDown) {
-      const e = performance.now() + 0.8;
+      const e = performance.now() + 1.8;
       while (performance.now() < e) {
         // Artificially long execution time.
       }

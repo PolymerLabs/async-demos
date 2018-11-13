@@ -108,14 +108,14 @@ export const runAsync = <K>(
           composed: true,
           bubbles: true,
           detail: {promise}
-        }));  
+        }));
       }
     })();
   }
 
   // If the promise has not yet resolved, set/update the defaultContent
   if ((currentRunState === undefined || currentRunState.state === 'pending') && typeof pending === 'function') {
-    // part.setValue(pending());
+    part.setValue(pending());
   }
 });
 
