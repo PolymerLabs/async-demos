@@ -34,17 +34,20 @@ export class NpmPackage extends LitElement {
       </header>
       <div>
         ${fetchNpmPackage(this.name,
-          (pkg) => html`
-            <h3>${pkg.description}</h3>
-            <h4>dist-tags:</h4>
-            <ul>
-              ${Array.from(Object.entries(pkg['dist-tags'])).map(
-                ([tag, version]) => html`<li><pre>${tag}: ${version}</pre></li>`)}
-            </ul>
-          `,
-          () => 'Loading...',
-          () => 'Enter a Package Name',
-          (e) => `Error ${e.message}`)}
+          {
+            success: (pkg) => html`
+              <h3>${pkg.description}</h3>
+              <h4>dist-tags:</h4>
+              <ul>
+                ${Array.from(Object.entries(pkg['dist-tags'])).map(
+                  ([tag, version]) => html`<li><pre>${tag}: ${version}</pre></li>`)}
+              </ul>
+            `,
+            pending: () => 'Loading...',
+            initial: () => 'Enter a Package Name',
+            failure: (e) => `Error ${e.message}`
+          })
+        }
       </div>
     `;
   }

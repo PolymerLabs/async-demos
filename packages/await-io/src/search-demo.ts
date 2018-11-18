@@ -71,17 +71,18 @@ export class SearchDemo extends PendingContainer(LitElement) {
             @input=${this._onInput}>
         </div>
       </header>
-      ${searchPackages(this.query,
-        (data) => html`
+      ${searchPackages(this.query, {
+        success: (data) => html`
         <div id="results">
           ${repeat(data.objects.slice(10),
               (i: any) => i.package.name,
               (i: any) => html`<search-item .package=${i.package}></search-item>`)}
         </div>`,
-        // () => html`<md-spinner active></md-spinner>`,
-        () => html`<p>Loading...</p>`,
-        () => html`<p>Enter a Search Term</p>`,
-        (e) => html`<p>${e.message}</p>`)}
+        // pending: () => html`<md-spinner active></md-spinner>`,
+        pending: () => html`<p>Loading...</p>`,
+        initial: () => html`<p>Enter a Search Term</p>`,
+        failure: (e) => html`<p>${e.message}</p>`,
+      })}
     `;
   }
 
@@ -155,15 +156,18 @@ export class SearchItem extends LazyLitElement {
       <div>
       <p>${this.package.description}</p>
         <div>Version: ${this.package.version}</div>
-        ${fetchNpmPackage(this.package.name,
-          (pkg) => html`
-            <h4>dist-tags:</h4>
-            <ul>
-              ${Array.from(Object.entries(pkg['dist-tags'])).map(
-                ([tag, version]) => html`<li><pre>${tag}: ${version}</pre></li>`)}
-            </ul>
-          `/*,
-        () => html`<md-spinner active></md-spinner>`*/)}
+          ${fetchNpmPackage(this.package.name,
+            {
+              success: (pkg) => html`
+                <h4>dist-tags:</h4>
+                <ul>
+                  ${Array.from(Object.entries(pkg['dist-tags'])).map(
+                    ([tag, version]) => html`<li><pre>${tag}: ${version}</pre></li>`
+                    )}
+                </ul>
+              `,
+              // pending: () => html`<md-spinner active></md-spinner>`
+            })}
       </div>
     `;
   }

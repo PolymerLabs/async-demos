@@ -25,10 +25,12 @@ const runs = new WeakMap<Part, AsyncRunState>();
 
 export type RunAsyncDirective<K> = (
     key: K,
-    success: (result: any) => any,
-    pending?: () => any,
-    initial?: () => any,
-    failure?: (e: Error) => any,
+    handlers: {
+      success: (result: any) => any,
+      pending?: () => any,
+      initial?: () => any,
+      failure?: (e: Error) => any,
+    }
   ) => void;
 
 /**
@@ -46,10 +48,12 @@ export type RunAsyncDirective<K> = (
 export const runAsync = <K>(
   f: (key: K, options: {signal?: AbortSignal}) => Promise<unknown>): RunAsyncDirective<K> => (
   key: K,
-  success: (result: any) => any,
-  pending?: () => any,
-  initial?: () => any,
-  failure?: (e: Error) => any,
+  {
+    success,
+    pending,
+    initial,
+    failure,
+  }
 ) => directive((part: NodePart) => {
   
   const currentRunState = runs.get(part);
