@@ -20,7 +20,7 @@ const STATE_UPDATE_REQUESTED = 1 << 2;
 export abstract class LazyLitElement extends LitElement {
   [resolveUrgentUpdate]?: () => void;
 
-  requestUrgenUpdate() {
+  requesturgentUpdate() {
     this.requestUpdate();
     if (this[resolveUrgentUpdate] !== undefined) {
       this[resolveUrgentUpdate]!();
