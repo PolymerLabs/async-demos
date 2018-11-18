@@ -18,12 +18,12 @@ export class Dot extends LazyLitElement {
 
   enter() {
     this.hover = true;
-    this.requesturgentUpdate();
+    this.requestUrgentUpdate();
   }
 
   leave() {
     this.hover = false;
-    this.requesturgentUpdate();
+    this.requestUrgentUpdate();
   }
 
   render() {
